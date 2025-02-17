@@ -119,27 +119,49 @@ q4 = st.selectbox("When your phone's battery dies out, do you run for the charge
 q5 = st.selectbox("Do you worry about losing your cell phone?", [1, 0])
 q6 = st.selectbox("Do you take your phone to the bathroom?", [1, 0])
 
-# Prediction button
 if st.button("Predict"):
-    input_features = [q1, q2, q3, q4, q5, q6]
     prediction = model.predict([input_features])[0]
     
     if prediction == 1:
-        st.error("🔴 You are likely addicted to your smartphone.")
+        st.error("🔴 You are likely addicted to your smartphone. 📵 Try reducing screen time!")
+        st.markdown("""
+        **Tips to Reduce Smartphone Addiction:**
+        - 📵 Set screen time limits using apps like Digital Wellbeing or Screen Time.
+        - 🚫 Avoid using your phone right before sleep.
+        - 👥 Engage in offline activities like reading, exercise, or socializing.
+        - ⏳ Take frequent breaks from screens.
+        - 🔕 Disable non-essential notifications.
+        - ⏰ Use a real alarm clock instead of your phone.
+        """)
     else:
-        st.success("🟢 You are not addicted to your smartphone.")
+        st.success("🟢 You are not addicted to your smartphone. Keep up the good habits! ✅")
 
 # Sidebar for additional info
 with st.sidebar:
     st.markdown("## Navigation")
+
     if st.button("About"):
-        st.sidebar.write("This app predicts smartphone addiction using a machine learning model.")
-    if st.button("Algorithm Used"):
-        st.sidebar.write("Algorithm: Ensembled Techniques.")
+        st.title("📌 About the Project")
+        st.write("""
+        **📱 Smart Phone Addiction Prediction**  
+        This project predicts smartphone addiction levels based on behavioral patterns and psychological responses.
+        """)
+
+    if st.button("Algorithms Used"):
+        st.title("📌 Machine Learning Models Used")
+        st.write("""
+        - **Random Forest** 🌲: A collection of decision trees that work together to improve prediction accuracy.
+        - **Decision Tree** 🌳: A simple but powerful algorithm that splits data into nodes for classification.
+        - **Gradient Boosting** 🚀: An ensemble method that builds models sequentially, correcting errors along the way.
+        - **SVM (Support Vector Machine)** 📈: Finds the optimal boundary to classify data.
+        - **XGBoost & AdaBoost** ⚡: Advanced boosting techniques that enhance weak models.
+        - **Artificial Neural Networks (ANN)** 🧠: A deep learning model inspired by the human brain.
+        """)
+
     if st.button("Dataset"):
         df = pd.read_csv('Smart_phone_addiction.csv')
-        st.sidebar.dataframe(df)
-    
+        st.dataframe(df)
+
     if st.button("⬅️ Logout"):
         st.session_state["logged_in"] = False
         st.rerun()
