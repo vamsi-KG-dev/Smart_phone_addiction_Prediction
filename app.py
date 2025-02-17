@@ -119,6 +119,9 @@ q4 = st.selectbox("When your phone's battery dies out, do you run for the charge
 q5 = st.selectbox("Do you worry about losing your cell phone?", [1, 0])
 q6 = st.selectbox("Do you take your phone to the bathroom?", [1, 0])
 
+# Prepare the input features list
+input_features = [q1, q2, q3, q4, q5, q6]
+
 if st.button("Predict"):
     prediction = model.predict([input_features])[0]
     
