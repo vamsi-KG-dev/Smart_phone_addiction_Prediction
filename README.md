@@ -1,173 +1,90 @@
-📱 Smartphone Addiction Prediction using Ensemble Machine Learning Techniques
-📌 Project Overview
-
-Smartphone addiction has become a growing concern, affecting mental health, productivity, and social well-being.
-This project aims to predict smartphone addiction levels using ensemble machine learning techniques based on user behavioral and usage patterns.
-
-By leveraging multiple models together, the system achieves higher accuracy, robustness, and better generalization compared to single algorithms.
-
-🎯 Objectives
-
-Analyze smartphone usage behavior
-
-Build predictive models to identify addiction risk
-
-Apply ensemble learning for improved performance
-
-Deploy a user-friendly prediction system
-
-🧠 Machine Learning Techniques Used
-Base Models
-
-Logistic Regression
-
-Decision Tree
-
-K-Nearest Neighbors (KNN)
-
-Support Vector Machine (SVM)
-
-Ensemble Techniques
-
-Random Forest
-
-Voting Classifier (Hard & Soft Voting)
-
-Bagging
-
-Boosting (AdaBoost / Gradient Boosting)
-
-Ensemble models combine predictions from multiple learners to reduce overfitting and improve accuracy.
-
-📊 Dataset Description
-
-The dataset contains information related to smartphone usage patterns such as:
-
-Screen time
-
-App usage frequency
-
-Notification count
-
-Sleep disturbance
-
-Usage during night hours
-
-Social media engagement
-
-Target Variable:
-
-Addiction Level (Addicted / Not Addicted)
-
-🛠️ Technologies & Tools
-
-Programming Language: Python
-
-Libraries:
-
-NumPy
-
-Pandas
-
-Matplotlib
-
-Seaborn
-
-Scikit-learn
-
-Model Deployment:
-
-Flask / Streamlit
-
-Model Storage:
-
-Pickle (.pkl)
-
-⚙️ Project Workflow
-
-Data Collection
-
-Data Cleaning & Preprocessing
-
-Exploratory Data Analysis (EDA)
-
-Feature Selection
-
-Model Training
-
-Ensemble Model Creation
-
-Model Evaluation
-
-Model Deployment
-
-📈 Model Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1-Score
-
-Confusion Matrix
-
-Ensemble models showed better performance compared to individual classifiers.
-
-🚀 Deployment
-
-The trained ensemble model is deployed using:
-
-Flask / Streamlit
-
-Real-time user input
-
-Instant addiction prediction output
-
-Users can interact with the application via a simple web interface.
-
-📂 Project Structure
-Smartphone-Addiction-Prediction/
-│
-├── dataset/
-│   └── smartphone_usage.csv
-│
-├── models/
-│   └── phone_addiction_model.pkl
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── notebook.ipynb
-
-✅ Results
-
-Ensemble learning significantly improved prediction accuracy
-
-Reduced model bias and variance
-
-Reliable classification of addiction behavior
-
-🔮 Future Enhancements
-
-Deep learning implementation
-
-Mobile app integration
-
-Real-time usage tracking
-
-Multi-level addiction classification
-
-Cloud deployment
-
-👤 Author
-
-Vamsi Krishna Gopidesi
-🎓 B.Tech – Computer Science & Engineering (Data Science)
-📊 Aspiring Data Scientist / Data Analyst
-🛠 Skills: Python, ML, SQL, Power BI, Data Visualization
-
-📜 License
-
-This project is intended for educational and research purposes.
+📱 SMARTPHONE ADDICTION PREDICTION USING ENSEMBLE MACHINE LEARNING TECHNIQUES
+
+📌 PROJECT OVERVIEW  
+Smartphone addiction has become a growing concern affecting mental health, productivity, and social well-being.  
+This project aims to predict smartphone addiction by analyzing user behavior and smartphone usage patterns using ensemble machine learning techniques.  
+By combining multiple machine learning models, the system achieves higher accuracy, robustness, and better generalization compared to individual models.
+
+🎯 PROJECT OBJECTIVES  
+🔹 Analyze smartphone usage behavior  
+🔹 Identify addiction patterns using machine learning  
+🔹 Apply ensemble techniques to improve prediction accuracy  
+🔹 Deploy a real-time, user-friendly prediction system  
+
+🧠 MACHINE LEARNING TECHNIQUES USED  
+Base Models:  
+✔ Logistic Regression  
+✔ Decision Tree  
+✔ K-Nearest Neighbors (KNN)  
+✔ Support Vector Machine (SVM)  
+
+Ensemble Techniques:  
+🌲 Random Forest  
+🗳 Voting Classifier (Hard & Soft Voting)  
+🎒 Bagging  
+🚀 Boosting (AdaBoost / Gradient Boosting)  
+
+📊 DATASET DESCRIPTION  
+The dataset includes smartphone usage behavior such as screen time, app usage frequency, notification count, night-time usage, sleep disturbance, and social media engagement.  
+🎯 Target Variable: Addiction Status (Addicted / Not Addicted)
+
+🛠️ TECHNOLOGIES & TOOLS  
+🧑‍💻 Programming Language: Python  
+📚 Libraries: NumPy, Pandas, Matplotlib, Seaborn  
+🤖 Machine Learning: Scikit-learn  
+🌐 Deployment: Flask / Streamlit  
+💾 Model Storage: Pickle (.pkl)
+
+⚙️ PROJECT WORKFLOW  
+1️⃣ Data Collection  
+2️⃣ Data Cleaning & Preprocessing  
+3️⃣ Exploratory Data Analysis (EDA)  
+4️⃣ Feature Selection  
+5️⃣ Model Training  
+6️⃣ Ensemble Model Building  
+7️⃣ Model Evaluation  
+8️⃣ Deployment  
+
+📈 MODEL EVALUATION METRICS  
+✅ Accuracy  
+🎯 Precision  
+🔄 Recall  
+⚖️ F1-Score  
+📊 Confusion Matrix  
+Ensemble models outperformed individual models across all metrics.
+
+🚀 DEPLOYMENT  
+The trained ensemble model is deployed using Flask / Streamlit.  
+Users provide real-time input through a web interface and receive instant smartphone addiction predictions.  
+The trained model is loaded using a pickle (.pkl) file.
+
+📂 PROJECT STRUCTURE  
+Smartphone-Addiction-Prediction  
+├── dataset/smartphone_usage.csv  
+├── models/phone_addiction_model.pkl  
+├── app.py  
+├── requirements.txt  
+├── notebook.ipynb  
+└── README.md  
+
+✅ RESULTS  
+📈 Improved prediction accuracy  
+❌ Reduced overfitting  
+🔐 Reliable addiction classification  
+🧠 Better generalization using ensemble learning  
+
+🔮 FUTURE ENHANCEMENTS  
+🤖 Deep Learning implementation  
+📱 Mobile application integration  
+⏱ Real-time usage tracking  
+📊 Multi-level addiction classification  
+☁️ Cloud deployment  
+
+👤 AUTHOR  
+Vamsi Krishna Gopidesi  
+🎓 B.Tech – Computer Science & Engineering (Data Science)  
+📊 Aspiring Data Scientist / Data Analyst  
+🛠 Skills: Python, Machine Learning, SQL, Power BI, Data Visualization  
+
+📜 LICENSE  
+📘 This project is developed for educational and research purposes only.
