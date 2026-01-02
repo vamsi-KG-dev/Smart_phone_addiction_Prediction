@@ -1,41 +1,48 @@
 📱 SMARTPHONE ADDICTION PREDICTION USING ENSEMBLE MACHINE LEARNING TECHNIQUES
+────────────────────────────────────────────────────────────────────────
 
-📌 PROJECT OVERVIEW  
+📌 PROJECT OVERVIEW
+──────────────────
 Smartphone addiction has become a growing concern affecting mental health, productivity, and social well-being.  
-This project aims to predict smartphone addiction by analyzing user behavior and smartphone usage patterns using ensemble machine learning techniques.  
-By combining multiple machine learning models, the system achieves higher accuracy, robustness, and better generalization compared to individual models.
+This project predicts smartphone addiction by analyzing user behavior and usage patterns using ensemble machine learning techniques.  
+Combining multiple models improves accuracy, robustness, and generalization.
 
-🎯 PROJECT OBJECTIVES  
+🎯 PROJECT OBJECTIVES
+────────────────────
 🔹 Analyze smartphone usage behavior  
 🔹 Identify addiction patterns using machine learning  
-🔹 Apply ensemble techniques to improve prediction accuracy  
-🔹 Deploy a real-time, user-friendly prediction system  
+🔹 Improve prediction accuracy using ensemble techniques  
+🔹 Deploy a real-time prediction system  
 
-🧠 MACHINE LEARNING TECHNIQUES USED  
-Base Models:  
+🧠 MACHINE LEARNING TECHNIQUES USED
+────────────────────────────────
+Base Models  
 ✔ Logistic Regression  
 ✔ Decision Tree  
 ✔ K-Nearest Neighbors (KNN)  
 ✔ Support Vector Machine (SVM)  
 
-Ensemble Techniques:  
+Ensemble Techniques  
 🌲 Random Forest  
 🗳 Voting Classifier (Hard & Soft Voting)  
 🎒 Bagging  
 🚀 Boosting (AdaBoost / Gradient Boosting)  
 
-📊 DATASET DESCRIPTION  
+📊 DATASET DESCRIPTION
+────────────────────
 The dataset includes smartphone usage behavior such as screen time, app usage frequency, notification count, night-time usage, sleep disturbance, and social media engagement.  
 🎯 Target Variable: Addiction Status (Addicted / Not Addicted)
 
-🛠️ TECHNOLOGIES & TOOLS  
+🛠️ TECHNOLOGIES & TOOLS
+─────────────────────
 🧑‍💻 Programming Language: Python  
 📚 Libraries: NumPy, Pandas, Matplotlib, Seaborn  
 🤖 Machine Learning: Scikit-learn  
 🌐 Deployment: Flask / Streamlit  
 💾 Model Storage: Pickle (.pkl)
 
-⚙️ PROJECT WORKFLOW  
+⚙️ PROJECT WORKFLOW
+─────────────────
 1️⃣ Data Collection  
 2️⃣ Data Cleaning & Preprocessing  
 3️⃣ Exploratory Data Analysis (EDA)  
@@ -45,7 +52,8 @@ The dataset includes smartphone usage behavior such as screen time, app usage fr
 7️⃣ Model Evaluation  
 8️⃣ Deployment  
 
-📈 MODEL EVALUATION METRICS  
+📈 MODEL EVALUATION METRICS
+────────────────────────
 ✅ Accuracy  
 🎯 Precision  
 🔄 Recall  
@@ -53,12 +61,14 @@ The dataset includes smartphone usage behavior such as screen time, app usage fr
 📊 Confusion Matrix  
 Ensemble models outperformed individual models across all metrics.
 
-🚀 DEPLOYMENT  
-The trained ensemble model is deployed using Flask / Streamlit.  
+🚀 DEPLOYMENT
+────────────
+The ensemble model is deployed using Flask / Streamlit.  
 Users provide real-time input through a web interface and receive instant smartphone addiction predictions.  
 The trained model is loaded using a pickle (.pkl) file.
 
-📂 PROJECT STRUCTURE  
+📂 PROJECT STRUCTURE
+──────────────────
 Smartphone-Addiction-Prediction  
 ├── dataset/smartphone_usage.csv  
 ├── models/phone_addiction_model.pkl  
@@ -67,24 +77,30 @@ Smartphone-Addiction-Prediction
 ├── notebook.ipynb  
 └── README.md  
 
-✅ RESULTS  
+✅ RESULTS
+────────
 📈 Improved prediction accuracy  
 ❌ Reduced overfitting  
 🔐 Reliable addiction classification  
 🧠 Better generalization using ensemble learning  
 
-🔮 FUTURE ENHANCEMENTS  
+🔮 FUTURE ENHANCEMENTS
+────────────────────
 🤖 Deep Learning implementation  
 📱 Mobile application integration  
 ⏱ Real-time usage tracking  
 📊 Multi-level addiction classification  
 ☁️ Cloud deployment  
 
-👤 AUTHOR  
+👤 AUTHOR
+────────
 Vamsi Krishna Gopidesi  
 🎓 B.Tech – Computer Science & Engineering (Data Science)  
 📊 Aspiring Data Scientist / Data Analyst  
 🛠 Skills: Python, Machine Learning, SQL, Power BI, Data Visualization  
 
-📜 LICENSE  
+📜 LICENSE
+────────
+📘 This project is developed for educational and research purposes only.
+
 📘 This project is developed for educational and research purposes only.
