@@ -1,106 +1,107 @@
-📱 SMARTPHONE ADDICTION PREDICTION USING ENSEMBLE MACHINE LEARNING TECHNIQUES
-────────────────────────────────────────────────────────────────────────
+# 📱 Smartphone Addiction Prediction Machine Learning Model 🧠
 
-📌 PROJECT OVERVIEW
-──────────────────
-Smartphone addiction has become a growing concern affecting mental health, productivity, and social well-being.  
-This project predicts smartphone addiction by analyzing user behavior and usage patterns using ensemble machine learning techniques.  
-Combining multiple models improves accuracy, robustness, and generalization.
+## 📋 Project Overview
 
-🎯 PROJECT OBJECTIVES
-────────────────────
-🔹 Analyze smartphone usage behavior  
-🔹 Identify addiction patterns using machine learning  
-🔹 Improve prediction accuracy using ensemble techniques  
-🔹 Deploy a real-time prediction system  
+This project focuses on building a machine learning model to predict smartphone addiction based on user behavior and usage patterns. 📊  
+Smartphone addiction can negatively impact mental health, productivity, sleep quality, and social interactions. By leveraging machine learning and ensemble techniques, this project aims to identify addiction risk accurately and help promote healthier smartphone usage habits. 🌍✨
 
-🧠 MACHINE LEARNING TECHNIQUES USED
-────────────────────────────────
-Base Models  
-✔ Logistic Regression  
-✔ Decision Tree  
-✔ K-Nearest Neighbors (KNN)  
-✔ Support Vector Machine (SVM)  
+## 🔑 Features
 
-Ensemble Techniques  
-🌲 Random Forest  
-🗳 Voting Classifier (Hard & Soft Voting)  
-🎒 Bagging  
-🚀 Boosting (AdaBoost / Gradient Boosting)  
+The model uses the following features:
 
-📊 DATASET DESCRIPTION
-────────────────────
-The dataset includes smartphone usage behavior such as screen time, app usage frequency, notification count, night-time usage, sleep disturbance, and social media engagement.  
-🎯 Target Variable: Addiction Status (Addicted / Not Addicted)
+1. **screen-time**: ⏱️  
+   - Represents the total time spent using a smartphone per day.  
+   - **Role**: Higher screen time often indicates excessive usage and increased addiction risk.
 
-🛠️ TECHNOLOGIES & TOOLS
-─────────────────────
-🧑‍💻 Programming Language: Python  
-📚 Libraries: NumPy, Pandas, Matplotlib, Seaborn  
-🤖 Machine Learning: Scikit-learn  
-🌐 Deployment: Flask / Streamlit  
-💾 Model Storage: Pickle (.pkl)
+2. **app-usage-frequency**: 📲  
+   - Measures how frequently applications are opened.  
+   - **Role**: Frequent app usage suggests compulsive smartphone behavior.
 
-⚙️ PROJECT WORKFLOW
-─────────────────
-1️⃣ Data Collection  
-2️⃣ Data Cleaning & Preprocessing  
-3️⃣ Exploratory Data Analysis (EDA)  
-4️⃣ Feature Selection  
-5️⃣ Model Training  
-6️⃣ Ensemble Model Building  
-7️⃣ Model Evaluation  
-8️⃣ Deployment  
+3. **notification-count**: 🔔  
+   - The number of notifications received in a day.  
+   - **Role**: High notification frequency can lead to constant phone checking and dependency.
 
-📈 MODEL EVALUATION METRICS
-────────────────────────
-✅ Accuracy  
-🎯 Precision  
-🔄 Recall  
-⚖️ F1-Score  
-📊 Confusion Matrix  
-Ensemble models outperformed individual models across all metrics.
+4. **night-time-usage**: 🌙  
+   - Tracks smartphone usage during late-night hours.  
+   - **Role**: Excessive night usage is linked to poor sleep quality and addiction.
 
-🚀 DEPLOYMENT
-────────────
-The ensemble model is deployed using Flask / Streamlit.  
-Users provide real-time input through a web interface and receive instant smartphone addiction predictions.  
-The trained model is loaded using a pickle (.pkl) file.
+5. **social-media-usage**: 🌐  
+   - Time spent on social networking applications.  
+   - **Role**: Social media overuse is a major contributor to smartphone addiction.
 
-📂 PROJECT STRUCTURE
-──────────────────
-Smartphone-Addiction-Prediction  
-├── dataset/smartphone_usage.csv  
-├── models/phone_addiction_model.pkl  
-├── app.py  
-├── requirements.txt  
-├── notebook.ipynb  
-└── README.md  
+6. **gaming-time**: 🎮  
+   - Time spent playing games on the smartphone.  
+   - **Role**: Prolonged gaming can increase screen dependency and addictive behavior.
 
-✅ RESULTS
-────────
-📈 Improved prediction accuracy  
-❌ Reduced overfitting  
-🔐 Reliable addiction classification  
-🧠 Better generalization using ensemble learning  
+7. **sleep-disturbance**: 😴  
+   - Indicates whether smartphone usage affects sleep patterns.  
+   - **Role**: Sleep disruption is a strong indicator of problematic smartphone usage.
 
-🔮 FUTURE ENHANCEMENTS
-────────────────────
-🤖 Deep Learning implementation  
-📱 Mobile application integration  
-⏱ Real-time usage tracking  
-📊 Multi-level addiction classification  
-☁️ Cloud deployment  
+8. **daily-check-count**: 🔄  
+   - Number of times the phone is checked per day.  
+   - **Role**: Frequent checking reflects habitual and addictive behavior.
 
-👤 AUTHOR
-────────
-Vamsi Krishna Gopidesi  
-🎓 B.Tech – Computer Science & Engineering (Data Science)  
-📊 Aspiring Data Scientist / Data Analyst  
-🛠 Skills: Python, Machine Learning, SQL, Power BI, Data Visualization  
+9. **usage-duration-pattern**: 📈  
+   - Describes consistency or irregularity in smartphone usage duration.  
+   - **Role**: Irregular and prolonged usage patterns may signal addiction.
 
-📜 LICENSE
-────────
-📘 This project is developed for educational and research purposes only.
+10. **addiction-status**: ⚠️  
+    - The target variable indicating addiction level.  
+    - **Role**: Represents whether the user is classified as Addicted or Not Addicted.
+
+## 🧠 Machine Learning Techniques Used
+
+- Logistic Regression  
+- Decision Tree  
+- K-Nearest Neighbors (KNN)  
+- Support Vector Machine (SVM)  
+
+### Ensemble Techniques
+- Random Forest 🌲  
+- Voting Classifier 🗳️  
+- Bagging 🎒  
+- Boosting (AdaBoost / Gradient Boosting) 🚀  
+
+## 📈 Model Evaluation
+
+The model performance is evaluated using:  
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- Confusion Matrix  
+
+Ensemble models demonstrated better accuracy and generalization compared to individual machine learning models.
+
+## 🚀 Deployment
+
+The trained model is deployed using Flask / Streamlit to provide real-time predictions.  
+Users can input their smartphone usage details and instantly receive addiction prediction results.  
+The trained model is stored and loaded using a Pickle (.pkl) file.
+
+## 🎯 Applications
+
+- Identifying smartphone addiction risk  
+- Promoting healthy digital habits  
+- Supporting mental well-being initiatives  
+- Behavioral analysis and research  
+
+## 🔮 Future Enhancements
+
+- Integration of deep learning models  
+- Mobile application development  
+- Real-time smartphone usage tracking  
+- Multi-level addiction severity classification  
+- Cloud-based deployment  
+
+## 👤 Author
+
+**Vamsi Krishna Gopidesi**  
+B.Tech – Computer Science & Engineering (Data Science)  
+Aspiring Data Scientist / Data Analyst  
+
+## 📜 License
+
+This project is developed for educational and research purposes only.
 
 📘 This project is developed for educational and research purposes only.
